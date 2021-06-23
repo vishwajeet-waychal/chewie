@@ -281,7 +281,15 @@ class _MaterialControlsState extends State<MaterialControls>
                       const Expanded(child: Text('LIVE'))
                     else
                       _buildPosition(iconColor),
-                    if (chewieController.allowFullScreen) _buildExpandButton(),
+                    //if (chewieController.allowFullScreen) _buildExpandButton(),
+                    Container(
+                      height: barHeight,
+                      width: barHeight,
+                      child: Image.asset(
+                        'assets/logo.png',
+                        fit: BoxFit.fill,
+                        ),
+                    )
                   ],
                 ),
               ),
